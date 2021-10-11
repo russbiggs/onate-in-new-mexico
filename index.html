@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+
+        body html {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .map {
+            width: 200px;
+            height: 200px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item-list {
+            list-style: none;
+        }
+
+        .item-title {
+            font-size: 1.4rem;
+        }
+
+        .item-county {
+            font-size: 1rem;
+        }
+
+        .list-item {
+            display: flex;
+            justify-content: space-between;
+            width: 800px;
+            margin: 10px;
+            border: 1px black solid;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .list-item {
+                max-width: 400px;
+            }
+
+            .map {
+                width: 100px;
+                height: 100px;
+            }
+
+            .item-content {
+                padding: 0 20px;
+            }
+        }
+
+        .item-content {
+            padding: 0 20px;
+        }
+
+        .osm-link {
+            font-size: 0.8rem;
+        }
+
+    </style>
+    <title>Memorializing Oñate</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Memorializing Oñate in New Mexico</h1>
+        <ul class="js-item-list item-list">
+
+        </ul>
+    </main>
+    <span>Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a></span>
+    <script src="dist/bundle.js"></script>
+</body>
+</html>
